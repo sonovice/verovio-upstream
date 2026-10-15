@@ -1,0 +1,12 @@
+{
+  "topic": "natural",
+  "input": "accid-carried-natural.musicxml",
+  "returncodes": {
+    "mei": 0,
+    "svg": 0,
+    "midi": 0
+  },
+  "actual": 6,
+  "expected": 6,
+  "passed": true
+}

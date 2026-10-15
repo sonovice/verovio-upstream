@@ -1,0 +1,34 @@
+{
+  "topic": "cross-staff-octave",
+  "input": "d5-cross-staff-octave-shift.musicxml",
+  "returncodes": {
+    "mei": 0,
+    "svg": 0,
+    "midi": 0
+  },
+  "actual": [
+    84,
+    88,
+    67,
+    69,
+    84,
+    48,
+    48,
+    52,
+    79,
+    83
+  ],
+  "expected": [
+    84,
+    88,
+    67,
+    69,
+    48,
+    84,
+    48,
+    52,
+    79,
+    83
+  ],
+  "passed": true
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "file": "001-major-temperaments.musicxml",
+    "explicitTuning": false,
+    "equal": true,
+    "bytes": 488
+  },
+  {
+    "file": "002-keys-and-accidentals-simple.musicxml",
+    "explicitTuning": false,
+    "equal": true,
+    "bytes": 194
+  },
+  {
+    "file": "003-keys-and-accidentals-advanced.mei",
+    "explicitTuning": true,
+    "equal": true,
+    "bytes": 1038
+  },
+  {
+    "file": "004-maqam-rast.musicxml",
+    "explicitTuning": false,
+    "equal": true,
+    "bytes": 3870
+  },
+  {
+    "file": "005-maqam-rast-external-tuning.mei",
+    "explicitTuning": true,
+    "equal": true,
+    "bytes": 3870
+  },
+  {
+    "file": "006-blackwood-ex-29.musicxml",
+    "explicitTuning": false,
+    "equal": true,
+    "bytes": 1982
+  },
+  {
+    "file": "007-sagittal.musicxml",
+    "explicitTuning": false,
+    "equal": true,
+    "bytes": 1636
+  }
+]

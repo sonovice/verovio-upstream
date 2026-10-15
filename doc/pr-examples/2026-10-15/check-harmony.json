@@ -1,0 +1,24 @@
+{
+  "topic": "harmony",
+  "input": "harmony-display-text.musicxml",
+  "returncodes": {
+    "mei": 0,
+    "svg": 0,
+    "midi": 0
+  },
+  "actual": [
+    "Cm",
+    "N.C.",
+    "",
+    "C",
+    "Do7"
+  ],
+  "expected": [
+    "Cm",
+    "N.C.",
+    "",
+    "C",
+    "Do7"
+  ],
+  "passed": true
+}

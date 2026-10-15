@@ -1,0 +1,20 @@
+{
+  "topic": "tempo",
+  "input": "d1-direction-sound-tempo.musicxml",
+  "returncodes": {
+    "mei": 0,
+    "svg": 0,
+    "midi": 0
+  },
+  "actual": [
+    "100",
+    "60",
+    "140"
+  ],
+  "expected": [
+    "100",
+    "60",
+    "140"
+  ],
+  "passed": true
+}

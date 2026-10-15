@@ -1,0 +1,20 @@
+{
+  "topic": "midi-octave",
+  "input": "midi-octave-without-end.mei",
+  "returncodes": {
+    "mei": 0,
+    "svg": 0,
+    "midi": 0
+  },
+  "actual": [
+    48,
+    47,
+    48
+  ],
+  "expected": [
+    48,
+    47,
+    48
+  ],
+  "passed": true
+}

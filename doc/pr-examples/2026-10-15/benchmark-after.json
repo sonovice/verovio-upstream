@@ -1,0 +1,50 @@
+[
+  {
+    "measures": 2,
+    "additionalAttributes": false,
+    "loadData": 0.931999999999988,
+    "redoLayout": 1.3520000000000039,
+    "renderToSVG": 1.4540000000000077,
+    "total": 3.8739999999999952
+  },
+  {
+    "measures": 2,
+    "additionalAttributes": true,
+    "loadData": 0.7869999999999777,
+    "redoLayout": 1.1019999999999754,
+    "renderToSVG": 1.7019999999999982,
+    "total": 3.67999999999995
+  },
+  {
+    "measures": 14,
+    "additionalAttributes": false,
+    "loadData": 2.987000000000023,
+    "redoLayout": 4.406999999999982,
+    "renderToSVG": 5.3040000000000305,
+    "total": 12.812000000000012
+  },
+  {
+    "measures": 14,
+    "additionalAttributes": true,
+    "loadData": 2.579999999999984,
+    "redoLayout": 4.074999999999989,
+    "renderToSVG": 7.998000000000047,
+    "total": 14.727000000000032
+  },
+  {
+    "measures": 64,
+    "additionalAttributes": false,
+    "loadData": 10.523000000000025,
+    "redoLayout": 16.590000000000032,
+    "renderToSVG": 21.21400000000017,
+    "total": 48.40199999999993
+  },
+  {
+    "measures": 64,
+    "additionalAttributes": true,
+    "loadData": 10.226000000000113,
+    "redoLayout": 16.442000000000007,
+    "renderToSVG": 35.15700000000015,
+    "total": 62.04899999999998
+  }
+]
