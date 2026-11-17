@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Staff-item orders above and below the staff</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2026-11-17</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>The scoreDef places tempo, then dir, then dynam outwards from the staff above, and dir before dynam below. The staffDef of the second staff overrides the order above with dynam, then dir, then tempo.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef aboveorder="tempo dir dynam" beloworder="dir dynam">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="4" meter.unit="4" aboveorder="dynam dir tempo" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="s1n1" dur="4" oct="5" pname="c" />
+                           <note xml:id="s1n2" dur="4" oct="5" pname="d" />
+                           <note xml:id="s1n3" dur="4" oct="5" pname="e" />
+                           <note xml:id="s1n4" dur="4" oct="5" pname="f" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="s2n1" dur="4" oct="3" pname="c" />
+                           <note xml:id="s2n2" dur="4" oct="3" pname="d" />
+                           <note xml:id="s2n3" dur="4" oct="3" pname="e" />
+                           <note xml:id="s2n4" dur="4" oct="3" pname="f" />
+                        </layer>
+                     </staff>
+                     <tempo xml:id="tempo_s1" staff="1" startid="#s1n1" place="above">Allegro</tempo>
+                     <dir xml:id="dir_s1" staff="1" startid="#s1n1" place="above">dolce</dir>
+                     <dynam xml:id="dynam_s1" staff="1" startid="#s1n1" place="above">p</dynam>
+                     <dir xml:id="dir_s1_below" staff="1" startid="#s1n3" place="below">legato</dir>
+                     <dynam xml:id="dynam_s1_below" staff="1" startid="#s1n3" place="below">mf</dynam>
+                     <tempo xml:id="tempo_s2" staff="2" startid="#s2n1" place="above">Allegro</tempo>
+                     <dir xml:id="dir_s2" staff="2" startid="#s2n1" place="above">dolce</dir>
+                     <dynam xml:id="dynam_s2" staff="2" startid="#s2n1" place="above">p</dynam>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

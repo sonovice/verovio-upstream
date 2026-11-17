@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Vertical groups across classes</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2026-11-17</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>A tempo, a dynam, and a dir share vgrp 1 above the staff and are aligned on a common baseline across both measures. A fermata and a dir share vgrp 2 below the staff. The dir within the staff also has vgrp 2 but remains within the staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="m1n1" dur="4" oct="5" pname="c" />
+                           <note xml:id="m1n2" dur="4" oct="5" pname="e" />
+                           <note xml:id="m1n3" dur="4" oct="5" pname="g" />
+                           <note xml:id="m1n4" dur="4" oct="5" pname="b" />
+                        </layer>
+                     </staff>
+                     <tempo xml:id="tempo_vgrp1" staff="1" startid="#m1n1" place="above" vgrp="1">Andante</tempo>
+                     <dynam xml:id="dynam_vgrp1" staff="1" startid="#m1n4" place="above" vgrp="1">pp</dynam>
+                     <fermata xml:id="fermata_vgrp2" staff="1" startid="#m1n2" place="below" vgrp="2" />
+                     <dir xml:id="dir_vgrp2" staff="1" startid="#m1n4" place="below" vgrp="2">rit.</dir>
+                     <dir xml:id="dir_within" staff="1" startid="#m1n1" place="within" vgrp="2">solo</dir>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="m2n1" dur="1" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                     <dir xml:id="dir_vgrp1" staff="1" startid="#m2n1" place="above" vgrp="1">espressivo</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

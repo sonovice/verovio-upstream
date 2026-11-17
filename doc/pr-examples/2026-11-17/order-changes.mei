@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Staff-item order changes</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2026-11-17</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>The staffDef places dynam closest to the staff in the first measure. The scoreDef change before the second measure places dir closest and replaces the previous staffDef order. The staffDef change before the third measure places dynam closest again.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" aboveorder="dynam dir" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="m1n1" dur="1" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <dynam xml:id="dynam_m1" staff="1" startid="#m1n1" place="above">p</dynam>
+                     <dir xml:id="dir_m1" staff="1" startid="#m1n1" place="above">dolce</dir>
+                  </measure>
+                  <scoreDef aboveorder="dir dynam" />
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="m2n1" dur="1" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <dynam xml:id="dynam_m2" staff="1" startid="#m2n1" place="above">p</dynam>
+                     <dir xml:id="dir_m2" staff="1" startid="#m2n1" place="above">dolce</dir>
+                  </measure>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" aboveorder="dynam dir" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="m3n1" dur="1" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <dynam xml:id="dynam_m3" staff="1" startid="#m3n1" place="above">p</dynam>
+                     <dir xml:id="dir_m3" staff="1" startid="#m3n1" place="above">dolce</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
