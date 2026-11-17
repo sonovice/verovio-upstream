@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>staffDef text styles in the initial scoreDef</title>
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4" lyric.style="italic" text.style="normal">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label>scoreDef</label>
+                     </staffDef>
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" lyric.style="normal" text.style="italic">
+                        <label>staffDef</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="m1s1" dur="1" oct="5" pname="c">
+                              <verse n="1">
+                                 <syl xml:id="syl_m1s1">one</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="m1s2" dur="1" oct="5" pname="c">
+                              <verse n="1">
+                                 <syl xml:id="syl_m1s2">two</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <dir xml:id="dir_m1s1" staff="1" startid="#m1s1" place="above">dolce</dir>
+                     <dir xml:id="dir_m1s2" staff="2" startid="#m1s2" place="above">dolce</dir>
+                  </measure>
+                  <scoreDef lyric.weight="bold" />
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="m2s1" dur="1" oct="5" pname="d">
+                              <verse n="1">
+                                 <syl xml:id="syl_m2s1">three</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="m2s2" dur="1" oct="5" pname="d">
+                              <verse n="1">
+                                 <syl xml:id="syl_m2s2">four</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <dir xml:id="dir_m2s1" staff="1" startid="#m2s1" place="above">cantabile</dir>
+                     <dir xml:id="dir_m2s2" staff="2" startid="#m2s2" place="above">cantabile</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
